@@ -7,11 +7,3 @@ AOS.init({
 
 });
 
-
-function redirectLink(l){
-    
-    if(l == 1){
-        window.location.href = "#";
-    }
-
-}
