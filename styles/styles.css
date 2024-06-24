@@ -3,7 +3,6 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
 
 }
 
@@ -21,7 +20,6 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
 }
 
 .button-container {
@@ -29,7 +27,7 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
@@ -43,18 +41,17 @@ body, html {
     text-decoration: none;
 }
 
-.see-more {
-    color: green;
-    font-size: 3rem;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding-right: 30px;
-}
 
 
 @media (max-width: 768px) {
     .image-button {
-        width: 100%;
+        max-width: 400px;
     }
 }
+
+@media (max-width: 328px) {
+    .image-button {
+        max-width: 300px;
+    }
+}
+
